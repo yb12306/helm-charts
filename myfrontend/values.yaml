@@ -5,10 +5,11 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  registry: 192.168.2.8:30002
+  repository: test/myfrontend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "SNAPSHOT--29"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -23,7 +24,11 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {}
+podAnnotations: {
+  dapr.io/enabled: "true",
+  dapr.io/app-id: "myfrontend",
+  dapr.io/app-port: "80"
+}
 
 podSecurityContext: {}
   # fsGroup: 2000

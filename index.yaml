@@ -3,7 +3,7 @@ entries:
   mybackend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-16T17:27:34.1058607+08:00"
+    created: "2022-02-16T18:00:05.3744322+08:00"
     description: A Helm chart for Kubernetes
     digest: e344cb9154bfd37b8f20af5c05b3f5f98247997d5c53f46945e7e3caab1a892f
     name: mybackend
@@ -14,7 +14,7 @@ entries:
   myfrontend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-16T17:27:34.1063813+08:00"
+    created: "2022-02-16T18:00:05.3744322+08:00"
     description: A Helm chart for Kubernetes
     digest: 05c348b87fb021b008ce5b0f8c65ac74ffcd3213f099cc212c083f26db35ece8
     name: myfrontend
@@ -22,4 +22,4 @@ entries:
     urls:
     - myfrontend-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-16T17:27:34.1019487+08:00"
+generated: "2022-02-16T18:00:05.3734258+08:00"
