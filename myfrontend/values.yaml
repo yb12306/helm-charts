@@ -5,8 +5,7 @@
 replicaCount: 1
 
 image:
-  registry: 192.168.2.8:30002
-  repository: test/myfrontend
+  repository: 192.168.2.8:30002/test/myfrontend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "SNAPSHOT--29"
